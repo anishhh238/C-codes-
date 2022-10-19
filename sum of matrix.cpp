@@ -8,6 +8,7 @@ int main()
     cout << "Enter number of rows (between 1 and 100): ";
     cin >> r;
 
+    cout << "Enter number of columns (between 1 and 100): "; // missing cout statement for displaying the message for what u taking input from " c "
     cin >> c;
 
     cout << endl << "Enter elements of 1st matrix: " << endl;
@@ -31,7 +32,8 @@ int main()
 
     // Adding Two matrices
     for(i = 0; i < r; ++i)
-          sum[i][j] = a[i][j] + b[i][j];
+        for(j = 0; j < c; ++j) //missing for loop for " j " 
+            sum[i][j] = a[i][j] + b[i][j];
 
     // Displaying the resultant sum matrix.
     cout << endl << "Sum of two matrix is: " << endl;
