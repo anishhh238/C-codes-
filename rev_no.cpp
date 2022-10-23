@@ -6,7 +6,7 @@ int main() {
   int n, reversed_number = 0, remainder;
 
   cout << "Enter an integer: ";
-  cin >> remainder;
+  cin >> n; // Here u taking 'remainder' as input instead of 'n'
 
   while(n != 0) {
     remainder = n % 10;
@@ -14,7 +14,7 @@ int main() {
     n /= 10;
   }
 
-  cout << "Reversed Number = " << n;
+  cout << "Reversed Number = " << reversed_number; //Here u printing 'n' variable value instead of 'reversed_number'
 
   return 0;
 }
